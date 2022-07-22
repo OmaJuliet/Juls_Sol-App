@@ -23,26 +23,7 @@ header {
 	background-color: rgb(59, 115, 221);
 	color: white;
 	padding: 7px 20px;
-	/* display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between; */
 }
- 
-/* div.title {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-} */
-
-/* div.title-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 
 div.title .profile-img {
 	width: 65px;
@@ -88,7 +69,6 @@ div.chat-window {
 div.chats {
 	min-height: 65vh;
 	padding: 5px 5px 10px 5px;
-	/* padding: 20px; */
 }
 
 div.user-join {
@@ -389,8 +369,7 @@ div.user-head {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 10px;
-	/* border-bottom: 2px solid black; */
-    margin-left: 10px;
+        margin-left: 10px;
 	height: 7%;
 	margin-top: 30px;
 }
@@ -437,8 +416,7 @@ div.user-head {
 
 
 .friend-img {
-	/* width: 45px; */
-    width: 50px;
+        width: 50px;
 	height: 55px;
 	border-radius: 10%;
 }
