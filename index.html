@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=1.0">
+	<title>Julie's Social App</title>
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;1,400&family=Lobster&family=Moon+Dance&family=Murecho:wght@100&family=Poppins:wght@200&family=Raleway:wght@300&family=Roboto+Slab:wght@100&family=Satisfy&family=Send+Flowers&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+	<main>
+        <header>
+			<div class="title">
+                <h1>Juls_Sol App</h1>
+				<img src="images/sample1.png" class="profile-img" id="myImg" title="Click to view image">
+                <div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>  
+				</div>
+			</div>
+			<button class="" type="button">
+				<i class="bx bx-menu-alt-right" onclick="show_hide()" id="menu-btn"></i> 
+			</button>
+		</header>
+
+		<div class="container">
+
+			<div class="chat-window">
+				<div class="chats">
+					<div class="user-join">
+						<div style="display:flex;"><img src="images/sample1.png" class="user-one">
+						  <p><b>Juliet</b> </p>
+					    </div>
+                        <input class="post-input" type="text" placeholder="What's on your mind today?">
+                        <div class="post-icon">
+                            <i class="fas fa-paper-plane"> Post</i>
+                            <i class="fas fa-image"> Gallery</i>
+                            <i class="fas fa-camera"> Camera</i>
+                        </div>
+					</div>
+
+					<div class="user-join" id="user-join2">
+						<div style="display:flex;"><img src="images/lucy.jpg" class="user-one">
+						<p><b>Sarah Williams</b> </p></div>
+						<p class="post-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolore esse asperiores impedit recusandae aperiam in hic illum, sunt, 
+							nihil corrupti ipsam autem eos officia iusto quis et fugiat provident.</p>
+                        <img src="images/lucy.jpg" class="post-img"></img>
+                        <div class="post-icon"> 
+                            <i class="far fa-thumbs-up"> Like</i>
+                            <i class="fa fa-retweet"> Repost</i>
+                            <i class="fa fa-share-alt"> Share</i>
+                        </div>
+
+					</div>
+					
+				</div>
+			</div> 
+
+
+			<div class="user-window">
+				<div class="user-list">
+					<div class="others1">
+						<i class="fa fa-search"></i>
+						<input placeholder="Search ">
+					</div>
+				</div>
+            
+				<div class="user-list">
+                    <span title="My feed" class=" active"><i class="fas fa-grip-horizontal"></i><p>Feed</p></span>
+					<a href="profile.html" target="_blank"><span title="My profile"><i class="fa fa-user"></i><p>Profile</p></span></a>
+					<span title="News and features"><i class="far fa-id-card"></i><p>Latest News</p></span>
+				    <span title="Chat lists"><i class="fas fa-sms"></i><p>Chats</p></span>
+                    <span title="Groups"><i class="fas fa-users"></i><p>Groups</p></span>
+					<a href="notify.html" target="_blank"><span title="Notifications"><i class="fa fa-bell"></i><p>Notifications</p></span></a>
+					<span title="Settings"><i class="fas fa-cog"></i><p>Settings</p></span>
+					<span title="Marketplace"><i class="fas fa-shopping-cart"></i><p>Marketplace</p></span>
+				</div> 
+
+
+				<div class="user-head">
+					<h3>Upcoming Events</h3>
+				</div>
+				<div class="user-list2">  
+					<span><img src="images/webinar.jpg" class="friend-img" alt="julia's-image"><p>Dev's Webinar</p></span>
+                    <span><img src="images/tech.jpg" class="friend-img" alt="Ben's image"><p>Techies Connect</p></span>
+			        <span class="last-group"><img src="images/women-tech.jpg" class="friend-img" alt="Lucy's image"><p>Women in tech seminar</p></span>
+				</div>  
+			</div> 
+
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

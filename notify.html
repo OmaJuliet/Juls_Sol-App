@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification page for Be_Social App</title>
+     <!-- Tailwindcss -->
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+     <!--font awesome icons-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<style>
+    #navbar {
+    background: #fffcf9;
+    color: #3c3744;
+    border-bottom: 1px solid black;
+}
+
+#navbar .navbar-inner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .navbar-inner h4 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: cornflowerblue;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ 
+.container {
+    max-width: 1280px;
+    padding: 0 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+    #navbar .navbar-inner {
+        flex-wrap: wrap;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav id="navbar">
+          <div class="container navbar-inner">
+            <a href="index.html"><h4>Juliet</h4></a>
+    
+            <div class="hamburger">
+              <a href="index.html"><img class="logo-image" src="images/sample1.png" /></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<main>
+    <section class="text-gray-800 body-font mt-12">
+        <h2 class="text-2xl text-center mb-12 font-bold">Notifications</h2>
+        <div class="container px-5 py-24 mx-auto items-center justify-center">
+
+          <div class="block lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+              <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                <i class="fa fa-thumbs-up text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                <span class="title-font font-medium">Isabella Jane reacted to your post</span>
+              </div>
+            </div>
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+                <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                  <i class="fas fa-envelope-open text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                  <span class="title-font font-medium">Julia sent you a new message</span>
+                </div>
+              </div>
+  
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+              <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                <i class="fa fa-user text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                <span class="title-font font-medium">Micheal sent you a connection request</span>
+              </div>
+            </div>
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+              <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                <i class="fas fa-user-plus text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                <span class="title-font font-medium">Peace and 8 others followed you</span>
+              </div>
+            </div>
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+                <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                    <i class="fas fa-comment text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                  <span class="title-font font-medium">Lucy commented on your post: Girllll <i class="fas fa-grin-stars"></i></span>
+                </div>
+            </div>
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+              <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                <i class="fas fa-user-tag text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                <span class="title-font font-medium">NewsHub posted for the first time in a while</span>
+              </div>
+            </div>
+
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+                <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                    <i class="fas fa-at text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                    <span class="title-font font-medium">Ben mentioned you in a post</span>
+                </div>
+            </div>
+  
+            <div class="p-2 sm:w-1/2 w-full cursor-pointer ml-0 sm:ml-56">
+                <div class="bg-gray-200 hover:bg-gray-400 rounded flex p-4 h-full items-center">
+                  <i class="fa fa-users text-blue-600 w-6 h-6 flex-shrink-0 mr-4 mt-2"></i>
+                  <span class="title-font font-medium">Jamie invited you to join Dev Career Group</span>
+                </div>
+            </div>
+           
+
+          </div>
+          <button class="flex mx-auto mt-16 text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 mb-8 rounded text-lg">View More</button>
+        </div>
+      </section>
+</main>
+</body>
+</html>

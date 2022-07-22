@@ -1,0 +1,527 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	border-radius: 10px;
+	/* height: max-content; */
+}
+
+header {
+	background-color: rgb(59, 115, 221);
+	color: white;
+	padding: 7px 20px;
+	/* display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between; */
+}
+ 
+/* div.title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+} */
+
+/* div.title-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+div.title .profile-img {
+	width: 65px;
+	height: 70px;
+	border-radius: 50%;
+    margin-right: 15px;
+}
+
+div.title h1{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 30px;
+    /* margin-left: 10px; */
+}
+
+header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	display: none;
+	cursor: pointer;
+} 
+
+button i#menu-btn {
+	font-size: 35px;
+}
+
+div.container {
+	background-color: rgb(184, 181, 181);
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-self: stretch; 
+}
+
+div.chat-window {
+	width: 100%;
+    background-color: rgb(148, 148, 148);
+	border-radius: 10px;
+}
+
+div.chats {
+	min-height: 65vh;
+	padding: 5px 5px 10px 5px;
+	/* padding: 20px; */
+}
+
+div.user-join {
+	display: block;
+	flex-direction: row;
+	font-size: 1.5rem;
+	background-color: #fff;
+	color: rgb(130, 128, 128);
+	border-radius: 10px;
+	width: 100%;
+	height: 230px;
+	padding: 7px 10px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.user-join img.user-one {
+    width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	
+}
+
+.user-join p{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+
+ div.user-input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: stretch;
+	padding: 20px;
+} 
+
+input {
+	width: 100%;
+	font-size: 1.5rem;
+	background-color: #fff;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+}
+
+
+@media screen and (max-width: 912px) {
+	main {
+		width: 100%;
+	}
+	header button {
+		display: block;
+	}
+
+	div.container {
+		position: relative;
+	}
+
+	div.user-window {
+        position: absolute;
+		top: 0;
+		left: 0; 
+		width: 100%;
+		border-radius: 0 0 10px 10px;
+		height: max-content;
+		z-index: 11;
+		box-shadow: 0 15px 20px  -20px black;
+		padding-bottom: 0;
+		display: none;
+		margin-left: 0;
+	}
+
+	
+	.unknown .extra-icon p {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	div.user-join {
+		height: 250px;
+		font-size: 1rem;
+	}
+	.post-icon {
+		margin-right: 20px;
+		text-align: center;
+	}
+	.post-icon i {
+		margin-top: 10px;
+	}
+	main{
+		top: 90%;
+	}
+    div.title h1 {
+        font-size: 20px;
+    }
+    div.title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header {
+        display: flex;
+	    flex-direction: row;
+	    align-items: center;
+        justify-content: space-between;
+    }
+    div.title .profile-img {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+	div.user-window {
+		width: 300px;
+	}
+}
+
+@media screen and (width: 1024px) {
+	main{
+		top: 100%;
+	} 
+	.user-join .post-img {
+		margin-top: 5px;
+	}
+	div.user-join {
+		margin-bottom: 7px;
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+	main{
+		top: 80%;
+	} 
+	#user-join2 {
+		margin-top: 40px;
+		height: 700px;
+	}
+	
+	.user-join .post-img {
+		margin-top: 5px;
+		width: 100%;
+		height: 100%;
+		border-radius: 20%;
+	}
+}
+@media only screen and (min-width: 1024px){
+    div.title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    div.post-icon {
+        margin-top: 10px;
+    }
+}
+
+
+/* To enlarge owner's profile image */
+#myImg {
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.9);
+  }
+  
+
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	} 
+  }
+
+
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+.post-input {
+	font-size: 1.3rem;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	margin-top: 30px;
+}
+
+.post-icon {
+	margin-top: 50px;
+	cursor: pointer;
+	
+}
+
+.post-icon i {
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
+.post-icon i:hover {
+	color: cornflowerblue;
+}
+
+div.user-window {
+	width: 350px;
+	/* height: 600px; */
+	color: white;
+	background-color: rgb(148, 148, 148);
+	padding: 15px 20px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+div.user-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	/* border-bottom: 2px solid black; */
+    margin-left: 10px;
+	height: 7%;
+	margin-top: 30px;
+}
+
+.user-list span, .user span a, .user-list2 span{
+	display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+	margin-top: 20px;
+	align-items: center;
+    padding-left: 10px;
+}
+
+.user-list .active {
+    background-color:#bbb;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.user-list span p, .user-list2 span p{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+.user-list i{
+	font-size: 30px;
+}
+
+.user-list2 {
+    font-size: 22px;
+}
+
+.user-list2 span:hover {
+    cursor: pointer;
+}
+
+.user-list a {
+	color: white;
+}
+.user-list span:hover {
+	background-color: rgb(184, 181, 181);
+	border-radius: 25px 25px 25px 25px;
+}
+
+
+.friend-img {
+	/* width: 45px; */
+    width: 50px;
+	height: 55px;
+	border-radius: 10%;
+}
+
+div.user-head h3 {
+	font-size: 22px;
+}
+
+div.user-head h4 {
+	background-color: rgb(184, 181, 181);
+	padding: 5px 8px;
+	border-radius: 50px;
+} 
+
+.user-list .others{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.others a {
+	color: white;
+}
+
+
+.others1 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	height: 40px;
+	width: 100%;
+}
+.others1 .fa-search {
+    margin-top: 8px;
+	margin-left: 10px;
+}
+i .fa-search {
+    font-size: 10px;
+}
+
+.others1 input::placeholder {
+	color: rgb(153, 152, 152);
+	font-size: 18px;
+	margin: auto;
+}
+
+.user-window .fa {
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.fa-bell:hover {
+	animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+div.user-head h5{
+	font-size: 17px;
+}
+
+div.user-list p{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#user-join2 {
+	margin-top: 40px;
+	height: 690px;
+}
+
+#user-join2 .post-text {
+    margin-top: 20px;
+}
+
+.user-join .post-img {
+	margin-top: 10px;
+	width: 100%;
+	height: 420px;
+	border-radius: 10px;
+}
+
