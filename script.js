@@ -12,7 +12,7 @@ function show_hide(){
 
 //To enlarge user profile image when clicked
 var modal = document.getElementById("myModal");
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Grabbing the image and inserting it inside the modal
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -25,7 +25,7 @@ img.onclick = function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
