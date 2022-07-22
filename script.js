@@ -9,22 +9,9 @@ function show_hide(){
 }
  
 
-// var smallerscreen=document.querySelector('.first-content');
-// function show_hide(){
-// 	if(smallerscreen.style.display=="block"){
-// 		smallerscreen.style.display="none";
-// 	}
-// 	else {
-// 		smallerscreen.style.display="block";
-// 	}
-// }
 
-
-
-
-
+//To enlarge user profile image when clicked
 var modal = document.getElementById("myModal");
-
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
